@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDM</title>
+    <link rel="icon" href="./Pictures/logo.png">
+    <link rel="stylesheet" href="edm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="https://image.flaticon.com/icons/png/512/5002/5002589.png" alt="">
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./canhan.html">Cá nhân</a></li>
+            <li>
+                <a href="#">Thể loại</a>
+                <ul>
+                    <li><a href="./lofi.html">Lofi</a></li>
+                    <li><a href="./indie.html">Indie</a></li>
+                    <li><a href="./acoustic.html">Acoustic</a></li>
+                    <li><a href="./edm.html">EDM</a></li>
+                    <li><a href="./rap.html">Rap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Top 5</a>
+                <ul>
+                    <li><a href="./Top5/vn.html">Việt Nam</a></li>
+                    <li><a href="./Top5/aumy.html">Âu Mỹ</a></li>
+                    <li><a href="./Top5/chaua.html">Châu Á</a></li>
+                </ul>
+            </li>
+            <div class="upload">
+                <a href="./upload.html">
+                    <img src="https://image.flaticon.com/icons/png/512/3039/3039527.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <form action="./timkiem.html">
+                <input type="text" placeholder="Tìm bài hát" name="search">
+                </form>
+            </div>
+        </ul>
+    </div>
+
+  
+    <div class="chude">
+      <p>Nhạc EDM</p> 
+  </div>
+  
+  
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+          <!-- Header -->
+          
+          <div class="cd">
+            <div class="cd-thumb">
+              <div class="tuabai">
+                <header style="font-size: 10px; margin-left: 50px; margin-bottom: 10px;">
+                  <h1>String 57th & 9th</h1>
+                </header>
+              </div>
+          </div>
+          <!-- CD -->
+         
+            
+          <!-- Control -->
+          <div class="allcontrol">
+            <div class="control">
+              <div class="btn btn-repeat">
+                <i class="fas fa-redo"></i>
+              </div>
+              <div class="btn btn-prev">
+                <i class="fas fa-step-backward"></i>
+              </div>
+              <div class="btn btn-toggle-play">
+                <i class="fas fa-pause icon-pause"></i>
+                <i class="fas fa-play icon-play"></i>
+              </div>
+              <div class="btn btn-next">
+                <i class="fas fa-step-forward"></i>
+              </div>
+              <div class="btn btn-random">
+                <i class="fas fa-random"></i>
+              </div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+      
+            <audio id="audio" src=""></audio>
+            
+          </div>
+          
+          </div>
+      
+          
+        </div>
+        <div class="posterbh">
+          <img src="https://avatar-ex-swe.nixcdn.com/topic/mobile/2020/09/03/3/4/d/6/1599120670727_org.jpg" alt="title_nu">
+        </div>
+      
+        <div class="form">
+          <div style="height: 500px; width: 0px;"></div>
+          <div class="all">
+            <div class="playlist">
+            </div>
+          </div> 
+        </div>
+      
+
+
+     
+
+    <script src="edm.js"></script>
+
+</body>
+</html>

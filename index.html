@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truong</title>
+    <link rel="stylesheet" href="display.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="./Pictures/logo.png">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./Pictures/logo.png" alt="">
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./canhan.html">Cá nhân</a></li>
+            <li>
+                <a href="./TheLoai/">Thể loại</a>
+                <ul>
+                    <li><a href="./TheLoai/lofi.html">Lofi</a></li>
+                    <li><a href="./TheLoai/indie.html">Indie</a></li>
+                    <li><a href="./TheLoai/acoustic.html">Acoustic</a></li>
+                    <li><a href="./TheLoai/edm.html">EDM</a></li>
+                    <li><a href="./TheLoai/rap.html">Rap</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./Top5/">Top 5</a>
+                <ul>
+                    <li><a href="./Top5/vn.html">Việt Nam</a></li>
+                    <li><a href="./Top5/aumy.html">Âu Mỹ</a></li>
+                    <li><a href="./Top5/chaua.html">Châu Á</a></li>
+                </ul>
+            </li>
+            <div class="upload">
+                <a href="./upload.html">
+                    <img src="./Pictures/upload.png" alt="">
+                </a>
+            </div>
+            <div class="linegach"></div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="sign"><img src="./Pictures/sign.png" alt=""></button>
+            
+            <div class="search">
+                <form action="./timkiem.html">
+                <input type="text" placeholder="Tìm bài hát" name="search">
+                </form>
+            </div>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="button2">Đăng ký</button>
+        </ul>
+
+    </div>
+    <!-- Login -->
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+       
+      
+          <div class="container">
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="uname" required>
+      
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit" class="dangnhap">Đăng nhập</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Huỷ</button>
+            <span class="psw"><a href="#">Quên mật khẩu?</a></span>
+          </div>
+        </form>
+      </div>
+      <!-- Sign up -->
+      <div id="id02" class="modal1">
+        <form class="modal1-content1" action="/action_page.php">
+          <div class="container1">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Huỷ</button>
+              <button type="submit" class="signupbtn1">Đăng ký</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Tiêu đề phải -->
+    <div class="chude">
+        <p style="color: white;">CHỦ ĐỀ HOT</p>
+    </div>
+    <div class="chude2">
+        <div>
+            <a href="./TheLoai/acoustic.html">
+                <img src="https://avatar-ex-swe.nixcdn.com/topic/mobile/2020/08/13/e/5/a/b/1597291906936_org.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="./TheLoai/rap.html">
+            <img src="https://avatar-ex-swe.nixcdn.com/topic/thumb/2021/03/09/2/9/3/f/1615285006991_org.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="./TheLoai/indie.html">
+            <img src="https://avatar-ex-swe.nixcdn.com/topic/thumb/2020/06/17/7/d/8/9/1592387428504_org.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="./TheLoai/lofi.html">
+            <img src="https://avatar-ex-swe.nixcdn.com/topic/mobile/2020/06/15/9/d/c/3/1592214676187_org.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- Dòng 1 -->
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+                <img src="./Pictures/mv1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://cdn.baogiaothong.vn/files/Baogiay/2018/07/19/071350-24.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://i.ytimg.com/vi/5afz2COusA0/maxresdefault.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://newsmd1fr.keeng.net/tiin/archive/imageslead/534/202008/20200805/thumb00_120232132073933.jpg" alt="">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    
+    <!-- Dòng 2 -->
+
+    <div class="tamtrang">
+        <p style="color:white;">Tâm trạng</p>
+    </div>
+    <div class="allposter">
+        <div class="poster">
+            <a href="party.html">
+                <img src="https://photo-zmp3.zadn.vn/cover/b/8/2/1/b8212d0524ead535a238c624ab9649e2.jpg" alt="">
+            </a>
+            </div>
+        <div class="poster">
+            <a href="workout.html">
+                <img src="./Pictures/workout.jpg" alt="">
+            </a>
+        </div>
+        <div class="poster">
+            <img src="./Pictures/dinner.jpg" alt="">
+        </div>
+        <div class="poster">
+            <img src="./Pictures/relax.jpg" alt="">
+        </div>
+        <div class="poster">
+            <img src="./Pictures/chill.jpg" alt="">
+        </div>
+        <div class="poster">
+            <img src="https://photo-zmp3.zadn.vn/cover/b/3/2/d/b32dab34664c9a7f0d1f837b4babd4bb.jpg" alt="">
+        </div>
+     </div>
+
+
+     <div class="tencasi1">
+        <p style="color:white">Ca sĩ</p>
+    </div>
+    
+     <div class="casi3">
+        <div class="casi2">
+            <a href="vu.html">
+                <img src="./Pictures/vũ.jpg" alt="">
+            </a>
+        </div> 
+        <div class="casi2">
+            <img src="./Pictures/mytam.jpg" alt="">   
+        </div> 
+        <div class="casi2">
+            <img src="./Pictures/haanhtuan.jpg" alt="">
+        </div> 
+        <div class="casi2">
+            <img src="./Pictures/buianhtuan.jpg" alt="">
+        </div> 
+        <div class="casi2">
+            <img src="./Pictures/min.jpg" alt="">
+        </div>
+    </div>
+
+
+    <footer></footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        </script>
+</body>
+</html>

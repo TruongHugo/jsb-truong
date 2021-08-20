@@ -1,0 +1,290 @@
+:root {
+    --primary-color: #adadad5e;
+    --text-color: rgb(0, 0, 0);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  body {
+    height: 500px;
+    background-image: url(https://c0.wallpaperflare.com/preview/345/432/905/astronomy-constellation-dark-galaxy.jpg);
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+  .chude{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    margin-top: 45px;
+    color: white;
+  }
+  .form{
+    width: 700px;
+    height: 400px;
+    background: rgba(245, 245, 245, 0);
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    overflow-y: scroll;
+    display: flex;
+    border-bottom: 4px solid rgba(133, 133, 133, 0.493);
+  }
+  .allal{
+    margin-top: 850px;
+  }
+  
+  .player .icon-pause {
+    display: none;
+  }
+  
+  .player.playing .icon-pause {
+    display: inline-block;
+  }
+  
+  .player.playing .icon-play {
+    display: none;
+  }
+  
+  .dashboard {
+    background-color: rgba(56, 56, 56, 0.924);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* HEADER */
+  header{
+    display: flex;
+  }
+  header h2 {
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+  }
+  
+  /* CD */
+  .tuabai{
+  width: 300px;
+  margin-left: 50px;
+  }
+  .cd{
+    display: flex;
+    width: 1500px;
+  }
+  .cd-thumb {
+    width: 6%;
+    padding-top: 1%; 
+    background-color: rgb(243, 243, 243);
+    background-size: cover;
+    margin-left: 50px;
+  }
+  
+  /* CONTROL */
+  .allcontrol{
+    background: rgba(56, 56, 56, 0);
+    width: 30%;
+    margin-left: 400px;
+  }
+  .control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .control .btn {
+    color: #666;
+    padding: 18px;
+    font-size: 18px;
+  }
+  
+  .control .btn.active {
+    color: var(--primary-color);
+  }
+  
+  .control .btn-toggle-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+  }
+  
+  .progress {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 6px;
+    background: #ebe7e7;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  
+  .progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+  }
+  
+  /* PLAYLIST */
+  .playlist{
+    width: 680px;
+  }
+  .song {
+    display: flex;
+    margin-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.301);
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+  
+  .song.active {
+    background-color: rgba(46, 46, 46, 0.726);
+  }
+  
+  .song:active {
+    opacity: 0.8;
+  }
+  
+  .song.active .option,
+  .song.active .author,
+  .song.active .title {
+    color: #fff;
+  }
+  
+  .song .thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  
+  .song .body {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .song .title {
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  
+  .song .author {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .song .option {
+    padding: 16px 8px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  .header{
+    background: rgb(36, 35, 35);
+    display: flex;
+    height: 60px;
+    line-height: 40px;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+  }
+  .logo img{
+    width: 50px;
+    margin-right: 280px;
+  }
+  .upload img{
+    width: 40px;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  .menu{
+    display: flex;
+    margin-right: 1.5px;
+  }
+  .menu li a{
+    padding: 10px 20px;
+  }
+  .menu li a hover{
+    background: whitesmoke;
+    color: white;
+  }
+  .menu{
+    text-align: center;
+    background:rgb(36, 35, 35);
+  }
+  .menu > li{
+    float: left;
+    position: relative;
+  }
+  .menu > li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+  }
+  .menu ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: rgb(36, 35, 35);
+    display: none;
+  }
+  .menu ul ul{
+    top: 0;
+    left: 100%;
+  }
+  .menu ul li{
+    text-align: left;
+  }
+  .menu > li a:hover{
+    background: rgb(153, 149, 149);
+  }
+  .menu li:hover > ul{
+    display: block;
+  }
+  
+  
+  .header .search {
+    padding: 5px;
+    margin-left: 350px;
+  }
+  
+  .header input[type=text] {
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    color: #080808;
+  }
+  .posterbh img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+  .posterbh{
+    margin-left: 65%;
+  }
+  
+  

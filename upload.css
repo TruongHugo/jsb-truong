@@ -1,0 +1,134 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.header{
+    background: rgb(36, 35, 35);
+    display: flex;
+    height: 60px;
+    line-height: 40px;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+html {
+    font-family: "Poppins", sans-serif;
+  }
+.logo img{
+    width: 50px;
+    margin-right: 280px;
+}
+.upload img{
+    width: 40px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    margin-right: 1.5px;
+}
+.menu li a{
+    padding: 10px 20px;
+}
+.menu li a hover{
+    background: whitesmoke;
+    color: white;
+}
+.menu{
+    text-align: center;
+    background:rgb(36, 35, 35);
+}
+.menu > li{
+    float: left;
+    position: relative;
+}
+.menu > li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+}
+.menu ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: rgb(36, 35, 35);
+    display: none;
+}
+.menu ul ul{
+    top: 0;
+    left: 100%;
+}
+.menu ul li{
+    text-align: left;
+}
+.menu > li a:hover{
+    background: rgb(153, 149, 149);
+}
+.menu li:hover > ul{
+    display: block;
+}
+.header .search {
+    padding: 5px;
+    margin-left: 350px;
+}
+  
+.header input[type=text] {
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    color: #080808;
+}
+
+
+/* Body */
+body{
+    height: 500px;
+    background-image: url(https://c0.wallpaperflare.com/preview/345/432/905/astronomy-constellation-dark-galaxy.jpg);
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+
+#labelInputUpload{
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgb(46, 44, 44);
+    margin-top: 240px;
+    color: black;
+}
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+    cursor: pointer;
+}
+.box {
+    font-size: 1.25rem;
+    background-color: #e9e6e6a6;
+    position: relative;
+    padding: 20px 20px;
+    height: 396px;
+    width: 930px;
+    display: block;
+    margin-top: 100px;
+    margin-left: 230px;
+    border-radius: 500px;
+}
+.noidung{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.box input{
+    display:none;
+}

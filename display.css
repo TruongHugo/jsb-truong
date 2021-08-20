@@ -1,0 +1,268 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ 
+}
+.header{
+    background: rgb(36, 35, 35);
+    display: flex;
+    height: 60px;
+    line-height: 40px;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+html {
+    font-family: "Poppins", sans-serif;
+}
+.logo img{
+    width: 50px;
+    margin-right: 300px;
+}
+.upload img{
+    width: 40px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    margin-right: 1.5px;
+}
+.menu li a{
+    padding: 10px 20px;
+}
+.menu li a hover{
+    background: whitesmoke;
+    color: white;
+}
+.menu{
+    text-align: center;
+    background:rgb(36, 35, 35);
+}
+.menu > li{
+    float: left;
+    position: relative;
+}
+.menu > li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+}
+.menu ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: rgb(36, 35, 35);
+    display: none;
+}
+.menu ul ul{
+    top: 0;
+    left: 100%;
+}
+.menu ul li{
+    text-align: left;
+}
+.menu > li a:hover{
+    background: rgb(153, 149, 149);
+}
+.menu li:hover > ul{
+    display: block;
+}
+
+.header .search {
+    padding: 5px;
+    margin-left: 250px;
+}
+  
+.header input[type=text] {
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    color: #080808;
+}
+.sign img{
+    height: 30px;
+    padding-left: 10px;
+}
+.linegach{
+    width: 2px;
+    height: 38px;
+    background-color: grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Body */
+body{
+    height: 1000px;
+    background: rgb(104, 103, 103);
+    padding-top: 20px;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 15px 35px 15px #080808fb;
+    margin-left: 5%;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: whitesmoke;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.chude{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 72%;
+    margin-top: 80px;
+}
+.chude2 img{
+    width: 380px;
+    height: 120px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px #080808;
+}
+.chude2{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 20px;
+}
+.tamtrang{
+    font-weight: bold;
+    margin-top: 80px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+}
+.casi{
+    font-weight: bold;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    margin-left: 5%;
+}
+.allposter{
+    display: flex;
+    border-radius: 15px;
+    height: 150px;  
+    justify-content: center;
+}
+.poster img{
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    width: 215px;
+    border-radius: 15px;
+}
+.poster{
+    position: relative;
+    display: block;
+    border-radius: 15%;
+    overflow: hidden;
+    box-shadow: 0 15px 35px #080808e7;
+    transition: all ease 0.4s;
+    margin: 0px;
+}
+.poster:hover{
+    box-shadow: none;
+    transform: scale(0.98) translateY(5px);
+}
+
+.tencasi1{
+    font-weight: bold;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    border-bottom: 4px solid gray;
+    width: 90%;
+    margin-left: 5%;
+}
+.casi2 img{
+    width: 245px;
+    height: 300px;
+}
+.casi2{
+    position: relative;
+    display: block;
+    border-radius: 15%;
+    overflow: hidden;
+    box-shadow: 0 15px 25px #080808e7;
+    transition: all ease 0.4s;
+    margin: 10px 10px 15px 0; 
+    height: 300px;
+}
+.casi2:hover{
+    box-shadow: none;
+    transform: scale(0.98) translateY(5px);
+}
+.casi3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alltencs{
+    display: flex;
+}
+
+
+footer{
+    background-color: #313030;
+    height: 300px;
+}
